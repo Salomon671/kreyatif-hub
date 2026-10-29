@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#6d28d9">
+  <meta name="description" content="Kreyatif Hub — découvre des créations, services et produits numériques de créateurs indépendants.">
+  <title>Kreyatif Hub — Le talent trouve sa place</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="Kreyatif Hub accueil"><span class="brand-mark">K</span><span>Kreyatif<span class="brand-light">Hub</span></span></a>
+    <nav class="main-nav" aria-label="Navigation principale">
+      <a href="#explorer">Explorer</a><a href="#categories">Catégories</a><a href="#createurs">Créateurs</a>
+    </nav>
+    <div class="header-actions"><button class="btn btn-quiet" id="loginBtn">Connexion</button><button class="btn btn-primary" id="startSellingBtn">Vendre gratuitement <span aria-hidden="true">↗</span></button><button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu">☰</button></div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero-copy"><div class="eyebrow"><span class="eyebrow-dot"></span> La place de tous les talents</div>
+        <h1>Ton talent mérite<br>de <span class="gradient-text">se faire connaître.</span></h1>
+        <p class="hero-subtitle">Découvre des créations uniques, trouve des services créatifs et soutiens les talents indépendants. Tout commence ici.</p>
+        <form class="search-bar" id="searchForm"><span class="search-icon" aria-hidden="true">⌕</span><input id="searchInput" type="search" placeholder="Que recherches-tu aujourd'hui ?" aria-label="Rechercher"><button type="submit" class="btn btn-primary">Explorer</button></form>
+        <div class="hero-footnote"><span class="avatar-stack"><i>S</i><i>A</i><i>M</i></span><span><strong>Une communauté créative</strong><br>Des talents, des idées, des opportunités.</span></div>
+      </div>
+      <div class="hero-art" aria-label="Exemples de créations"><div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div><div class="art-card art-card-main"><div class="portrait-placeholder"><span>✳</span><small>CRÉATION ORIGINALE</small></div><div class="art-card-meta"><div><strong>Portrait sur mesure</strong><span>Par un artiste indépendant</span></div><span class="price-tag">Création</span></div></div><div class="floating-note note-top"><span class="note-icon">✦</span><span><strong>Fais découvrir ton art</strong><small>À ta façon, à ton rythme</small></span></div><div class="floating-note note-bottom"><span class="note-icon note-green">↗</span><span><strong>100% gratuit au lancement</strong><small>Pas de frais pour publier</small></span></div><div class="sparkle sparkle-one">✦</div><div class="sparkle sparkle-two">✧</div></div>
+    </section>
+    <section class="trust-strip"><span>UNE PLATEFORME POUR</span><span>Artistes</span><span class="trust-separator">✳</span><span>Créateurs</span><span class="trust-separator">✳</span><span>Freelances</span><span class="trust-separator">✳</span><span>Auteurs</span><span class="trust-separator">✳</span><span>Entrepreneurs</span></section>
+    <section class="section categories-section" id="categories"><div class="section-heading"><div><p class="eyebrow">Explore par univers</p><h2>Qu'est-ce qui t'inspire ?</h2></div><a href="#explorer" class="text-link">Tout explorer <span>↗</span></a></div>
+      <div class="category-grid">
+        <button class="category-card" data-category="Art & Divertissement"><span class="category-icon icon-purple">✳</span><strong>Art & Divertissement</strong><small>Portraits, illustrations, musique</small><span class="category-arrow">↗</span></button>
+        <button class="category-card" data-category="Design & Graphisme"><span class="category-icon icon-orange">◈</span><strong>Design & Graphisme</strong><small>Flyers, logos, identité visuelle</small><span class="category-arrow">↗</span></button>
+        <button class="category-card" data-category="Services créatifs"><span class="category-icon icon-blue">✎</span><strong>Services créatifs</strong><small>Compétences et accompagnement</small><span class="category-arrow">↗</span></button>
+        <button class="category-card" data-category="Ebooks & Documents"><span class="category-icon icon-green">▤</span><strong>Ebooks & Documents</strong><small>Guides, livres et PDF</small><span class="category-arrow">↗</span></button>
+        <button class="category-card" data-category="Mode & Accessoires"><span class="category-icon icon-pink">◇</span><strong>Mode & Accessoires</strong><small>Pièces uniques et accessoires</small><span class="category-arrow">↗</span></button>
+        <button class="category-card" data-category="Produits physiques"><span class="category-icon icon-yellow">▣</span><strong>Produits physiques</strong><small>Des trouvailles de créateurs</small><span class="category-arrow">↗</span></button>
+      </div>
+    </section>
+    <section class="section listings-section" id="explorer"><div class="section-heading"><div><p class="eyebrow">La créativité en vitrine</p><h2>À découvrir</h2><p class="section-description">Les créations et services publiés sur Kreyatif Hub apparaîtront ici.</p></div><span class="launch-chip"><span></span> En construction</span></div>
+      <div class="empty-state"><div class="empty-illustration">✳</div><h3>La vitrine se prépare</h3><p>Les annonces seront affichées ici dès que les créateurs publieront leurs premières offres.</p><button class="btn btn-outline" id="emptyStartBtn">Préparer ma boutique <span>↗</span></button></div>
+    </section>
+    <section class="creator-banner" id="createurs"><div class="creator-symbol">K<span>✳</span></div><div><p class="eyebrow">Tu as quelque chose à partager ?</p><h2>Fais de ton talent une opportunité.</h2><p>Prépare ta boutique, présente ton travail et partage ton lien avec le monde.</p></div><button class="btn btn-white" id="bannerStartBtn">Je veux devenir créateur <span>↗</span></button></section>
+    <section class="section how-section"><div class="section-heading"><div><p class="eyebrow">Simple comme bonjour</p><h2>Un espace pour créer et grandir.</h2></div></div><div class="steps-grid"><article class="step"><span class="step-number">01</span><h3>Crée ton espace</h3><p>Prépare ton profil et présente ton univers créatif.</p></article><article class="step"><span class="step-number">02</span><h3>Publie tes offres</h3><p>Ajoute tes produits, services, créations ou documents numériques.</p></article><article class="step"><span class="step-number">03</span><h3>Partage ton lien</h3><p>Fais connaître ta boutique et échange avec tes clients.</p></article></div></section>
+  </main>
+  <footer class="site-footer"><a class="brand" href="#"><span class="brand-mark">K</span><span>Kreyatif<span class="brand-light">Hub</span></span></a><p>Les talents méritent un espace pour grandir.</p><span>© <span id="year"></span> Kreyatif Hub</span></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
