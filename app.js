@@ -143,15 +143,7 @@ document.getElementById("loginBtn")?.addEventListener("click", async () => {
     else notify("Tu es déconnecté.");
   } else openAuth("login");
 });
-["startSellingBtn", "emptyStartBtn", "bannerStartBtn"].forEach(id => {
-  document.getElementById(id)?.addEventListener("click", () => {
-    if (!currentUser) {
-      openAuth("signup");
-      return;
-    }
-    notify("Ton compte est connecté. La création de boutique sera activée dans la prochaine étape.");
-  });
-});
+// The seller.js module owns the shop buttons and opens the real shop-request form.
 document.getElementById("authClose")?.addEventListener("click", closeAuth);
 document.getElementById("authOverlay")?.addEventListener("click", event => {
   if (event.target.id === "authOverlay") closeAuth();
