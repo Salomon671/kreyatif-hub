@@ -47,8 +47,26 @@
     <section class="section how-section"><div class="section-heading"><div><p class="eyebrow">Simple comme bonjour</p><h2>Un espace pour créer et grandir.</h2></div></div><div class="steps-grid"><article class="step"><span class="step-number">01</span><h3>Crée ton espace</h3><p>Prépare ton profil et présente ton univers créatif.</p></article><article class="step"><span class="step-number">02</span><h3>Publie tes offres</h3><p>Ajoute tes produits, services, créations ou documents numériques.</p></article><article class="step"><span class="step-number">03</span><h3>Partage ton lien</h3><p>Fais connaître ta boutique et échange avec tes clients.</p></article></div></section>
   </main>
   <footer class="site-footer"><a class="brand" href="#"><span class="brand-mark">K</span><span>Kreyatif<span class="brand-light">Hub</span></span></a><p>Les talents méritent un espace pour grandir.</p><span>© <span id="year"></span> Kreyatif Hub</span></footer>
+  <section class="auth-overlay" id="authOverlay" hidden aria-modal="true" role="dialog" aria-labelledby="authTitle">
+    <div class="auth-panel">
+      <button class="auth-close" id="authClose" aria-label="Fermer">×</button>
+      <a class="brand auth-brand" href="#"><span class="brand-mark">K</span><span>Kreyatif<span class="brand-light">Hub</span></span></a>
+      <p class="eyebrow">Bienvenue dans la communauté</p><h2 id="authTitle">Rejoins Kreyatif Hub</h2>
+      <p class="auth-intro">Crée un compte pour préparer ta boutique et découvrir les créateurs.</p>
+      <div class="auth-tabs"><button class="auth-tab active" type="button" data-auth-mode="signup">Créer un compte</button><button class="auth-tab" type="button" data-auth-mode="login">Connexion</button></div>
+      <form id="authForm" class="auth-form">
+        <label id="authNameLabel">Nom affiché<input id="authName" autocomplete="name" placeholder="Ton nom ou nom de créateur"></label>
+        <label>Adresse e-mail<input id="authEmail" type="email" autocomplete="email" placeholder="toi@exemple.com" required></label>
+        <label>Mot de passe<input id="authPassword" type="password" autocomplete="new-password" minlength="8" placeholder="8 caractères minimum" required></label>
+        <button class="btn btn-primary auth-submit" type="submit" id="authSubmit">Créer mon compte</button>
+        <p class="auth-message" id="authMessage" role="status"></p>
+      </form>
+      <p class="auth-privacy">Ton e-mail sert à la connexion et ne sera pas affiché publiquement dans ta boutique.</p>
+    </div>
+  </section>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="supabase-client.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
