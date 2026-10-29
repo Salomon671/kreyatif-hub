@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="seller.css">
 </head>
 <body>
   <header class="site-header">
@@ -64,9 +65,25 @@
       <p class="auth-privacy">Ton e-mail sert à la connexion et ne sera pas affiché publiquement dans ta boutique.</p>
     </div>
   </section>
+  <section class="shop-overlay" id="shopOverlay" hidden aria-modal="true" role="dialog" aria-labelledby="shopTitle">
+    <div class="shop-panel">
+      <button class="shop-close" id="shopClose" aria-label="Fermer">×</button>
+      <p class="eyebrow">Ton espace créateur</p><h2 id="shopTitle">Prépare ta boutique</h2>
+      <p>Présente ton univers. La création est gratuite ; ta boutique sera publiée après validation.</p>
+      <div class="shop-note">Pour le lancement, Kreyatif Hub est gratuit. Aucun paiement ni frais ne te seront demandés pour créer ta boutique.</div>
+      <form class="shop-form" id="shopForm">
+        <label>Nom de la boutique<input id="shopName" maxlength="80" required placeholder="Ex. Atelier Salomon"></label>
+        <label>Lien public souhaité<input id="shopSlug" maxlength="80" required pattern="[a-z0-9-]+" placeholder="atelier-salomon" aria-describedby="shopSlugHelp"><small id="shopSlugHelp">Lettres minuscules, chiffres et tirets uniquement.</small></label>
+        <label>Présentation<textarea id="shopDescription" maxlength="700" placeholder="Que proposes-tu aux visiteurs ?"></textarea></label>
+        <button class="btn btn-primary" id="shopSubmit" type="submit">Envoyer ma demande</button>
+        <p id="shopStatus" class="shop-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script src="supabase-client.js"></script>
   <script src="app.js"></script>
+  <script src="seller.js"></script>
 </body>
 </html>
